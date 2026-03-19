@@ -1,34 +1,32 @@
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  align-items:center;
-  min-height: 293px;}
+  align-items: center;
+  min-height: 293px;
+}
 
 .cover {
   position: relative;
-  min-height: 757px;
+  min-height: 757px;  
   background-image: url(../images/cover.jpg);
   background-size: cover;
-  background-position: center; 
+  background-position: center;
   z-index: -2;
-  }
+}
 
 .overlay {
-  background-color:rgb(0 0 0/ 0.6);
+  background-color: rgb(0 0 0/ 0.6);
   position: absolute;
   inset: 0;
   z-index: -1;
-  }
+}
 
-.lots {
-  padding: 0 24px;
-  margin: 180px 0 120px;
-  background-color: burlywood;
+.lots { 
+padding: 180px 24px 120px;
 }
 
 .about {
-  padding: 0 24px;
-  margin-bottom: 180px;
+  padding: 0 24px;  
   background-color: blueviolet;
 }
 
@@ -37,9 +35,8 @@
   background-color: coral;
 }
 
-.header__links-list{
+.header__links-list {
   display: flex;
-  justify-content: ; /* TODD: выравнять!*/
   list-style-type: circle;
 }
 
@@ -55,7 +52,7 @@
 .address {
   display: flex;
   flex-direction: column;
-  }
+}
 
 .header__address {
   align-items: flex-start;
@@ -66,55 +63,126 @@
   font-weight: 700px;
   font-size: 100px;
   text-transform: uppercase;
-  }
+}
 
-  .aligned-text {
-    
-    display: block;    
-  }
+.aligned-text {
+  display: block;
+}
 
-  .aligned-text_left {
-    padding: 165px 50px 0;
-    text-align: left;  
-  }
+.aligned-text_left {
+  padding: 165px 50px 0;
+  text-align: left;
+}
 
-  .aligned-text_center {
-    padding: 15px 0 0 35px;
-    text-align: center;
-  }
+.aligned-text_center {
+  padding: 15px 0 0 35px;
+  text-align: center;
+}
 
-  .aligned-text_right {    
-    padding: 20px; 
-    text-align: right;
-    
-  }
+.aligned-text_right {
+  padding: 20px;
+  text-align: right;
+}
 
-  .letter-spacing-extended {
-    letter-spacing: 30px;
-  }
+.letter-spacing-extended {
+  letter-spacing: 30px;
+}
 
-  .cover__description {
-    padding: 80px 50px 0;    
-    position: relative;
-    display:flex;
-    justify-content: space-between;
-  }
+.cover__description {
+  padding: 80px 50px 0;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
 
-  .cover__description-text {    
-    color: #fff; 
-    font-size: 22px;
-    line-height: 28px;    
-    text-transform: uppercase;
-    word-spacing: 19px;
-    align-content: center;
-  } 
+.cover__description-text {
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: uppercase;
+  word-spacing: 19px;
+  align-content: center;
+}
 
-  .bet-button {
-    color: #fff;
-    padding: 12px 32px;
-    background-color: transparent;
-    border: 1px solid #fff;
-    font-size: 22px;    
-    text-transform: uppercase;    
-  }
+.bet-button {
+  color: #fff;
+  padding: 12px 32px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+}
 
+.lots__heading {
+padding-left: 40px;
+font-weight: 700;
+font-size: 40px;
+line-height: 100%;
+text-transform: uppercase;
+}
+
+.lots__card-list {
+  padding-top: 27px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.lots__card-list-item {
+width: 334px;
+min-height: 596px;
+color: #fff;
+}
+
+.card-link {
+text-decoration: none;
+height: 100%;
+}
+
+.card {
+padding: 48px 40px;
+position: relative;
+z-index: -2;
+height: 100%;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+}
+
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+}
+
+.card__title {
+font-weight: 700;
+font-size: 22px;
+line-height: 120%;
+text-transform: uppercase;
+text-decoration: underline;
+}
+
+.card__text {
+font-weight: 400;
+font-size: 20px;
+line-height: 120%;
+}
+
+.lots__look-more-link {
+display: flex;
+margin: 30px 40px;
+font-weight: 400;
+font-size: 20px;
+line-height: 100%;
+}
