@@ -1,4 +1,48 @@
 .header {
+  padding: 93px 50px 96px;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+}
+
+.header__links-list-item {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.header__links-list {
+  display: flex;
+  list-style-type: circle;
+  gap: 33px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_active .header__link {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  width: 129.11px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  max-width: 239.5px;
+}
+
+.header__address-contacts {
+  white-space: nowrap;
+}
+.header__address {
+  justify-self: end;
 }
 
 .cover {
@@ -15,42 +59,6 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-}
-
-.lots {
-  padding: 180px 24px 0 24px;
-}
-
-.about {
-  padding-bottom: 180px;
-}
-
-.footer {
-  min-height: 180px;
-  background-color: coral;
-}
-
-.header__links-list {
-  display: flex;
-  list-style-type: circle;
-}
-
-.header__link_active .header__link {
-  text-decoration: none;
-}
-
-.header__logo {
-  display: block;
-  width: 129px;
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-}
-
-.header__address {
-  align-items: flex-start;
 }
 
 .cover__title {
@@ -84,7 +92,7 @@
 }
 
 .cover__description {
-  padding: 80px 50px 0;
+  padding: 85px 50px 0px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -106,6 +114,10 @@
   border: 1px solid #fff;
   font-size: 22px;
   text-transform: uppercase;
+}
+
+.lots {
+  padding: 185px 24px 0 24px;
 }
 
 .lots__heading {
@@ -175,25 +187,28 @@
 
 .lots__look-more-link {
   display: flex;
-  margin: 30px 40px;
+  margin: 35px 40px 0;
   font-weight: 400;
   font-size: 20px;
   line-height: 100%;
 }
 
+.about {
+  padding: 120px 50px 0;
+}
+
 .about__column {
   display: grid;
   grid-template-columns: 334px 1fr;
-  gap: 72px;
-}
+  }
 
 .about__logo {
+  margin: 35px 47px 0 0;
   display: flex;
   background-color: #000;
   width: 240px;
   height: 240px;
   border-radius: 50%;
-  align-self: center;
   justify-self: center;
   align-items: center;
 }
@@ -203,7 +218,7 @@
 }
 
 .about__title {
-  padding: 136px 0 100px;
+  padding: 135px 0 76px;
   font-weight: 700;
   font-size: 40px;
   text-transform: uppercase;
@@ -218,4 +233,9 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+}
+
+.footer {
+  min-height: 180px;
+  background-color: coral;
 }
